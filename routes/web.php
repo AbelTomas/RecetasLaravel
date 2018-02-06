@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/**
+ * PRUEBA DE FUNCIONAMIENTO
+ */
 Route::get('/', 'controlUsers@index');
 Route::put('/', 'controlUsers@entrar');
 Route::resource('/receta','RecetasController');
