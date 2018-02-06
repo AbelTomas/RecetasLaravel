@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', 'controlUsers@index');
-Route::put('/', 'controlUsers@entrar');
+
 Route::resource('/receta','RecetasController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
