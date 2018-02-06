@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::resource('/receta','RecetasController');
 
 Auth::routes();
