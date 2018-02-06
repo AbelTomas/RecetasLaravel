@@ -1,0 +1,29 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+table{
+    border-collapse: collapse; border-spacing: 0;
+    border: solid 1px black;
+}
+
+table tr th{
+    padding: 5px;
+    align-content: center;
+    font-size: 1.4em;
+
+}
+h1{
+    color: #e95353;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    color: #66512c;
+}
