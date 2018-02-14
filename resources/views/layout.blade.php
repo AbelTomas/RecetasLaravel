@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}" >
+    <link href="{{ asset('css/estilo.css') }}" rel="stylesheet" type="text/css" >
     <title> RECETAS </title>
 </head>
 <body>
