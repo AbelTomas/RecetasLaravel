@@ -14,10 +14,13 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                     Usuario Validado con éxito
+
                 </div>
             </div>
         </div>
     </div>
+    {{ Form::hidden ('_method', 'PUT') }}
+    <a href="{{url('receta')}}" id="validado">Ir a Recetas</a>
 </div>
 @endsection
