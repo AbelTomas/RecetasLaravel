@@ -2,6 +2,7 @@
 
 @section('contenido')
 <h2> {{ $receta->nombre }} </h2>
+<article id="show">
 <ul>
     <li> Nombre de la receta: {{  $receta->nombre }} </li>
     <li> Numero de comensales: {{ $receta->numcomensales }} </li>
@@ -14,5 +15,7 @@
     <li> Categoria: {{  $receta->categoria }} </li>
     <li> Valoracion: {{ $receta->valoracion }} </li>
 </ul>
-<p> {{ link_to('receta', 'Volver atrás') }} </p>
+
+</article>
+<p id="atras"> {{ link_to('receta', 'Volver atrás') }} </p>
 @endsection
