@@ -6,37 +6,23 @@
     <p> <strong> {{ Session::get('notice') }} </strong> </p>
 @endif
 <p>
-    <a href="{{url('receta/create')}}">Crear nueva receta</a>
+    <a href="{{url('receta/create')}}" id="crear">Crear nueva receta</a>
 </p>
 
 @if($recetas->count())
 
-    <table>
+    <table id="tablaInicio">
         <tr>
             <th>Nombre</th>
-            <th>Nº Comensales </th>
-            <th>Ingrediente 1</th>
-            <th>Cantidad 1</th>
-            <th>Ingrediente 2</th>
-            <th>Cantidad 2</th>
-            <th>Ingrediente 3</th>
-            <th>Cantidad 3</th>
             <th>Categoria</th>
             <th>Valoracion</th>
-            <th>VER</th>
-            <th>EDITAR</th>
-            <th>ELIMINAR</th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         @foreach($recetas as $receta)
             <tr>
                 <td> {{ $receta->nombre }} </td>
-                <td> {{ $receta->numcomensales }} </td>
-                <td> {{ $receta->ingrediente1 }} </td>
-                <td> {{ $receta->cantidad1 }} </td>
-                <td> {{ $receta->ingrediente2 }} </td>
-                <td> {{ $receta->cantidad2 }} </td>
-                <td> {{ $receta->ingrediente3 }} </td>
-                <td> {{ $receta->cantidad3 }} </td>
                 <td> {{ $receta->categoria }} </td>
                 <td> {{ $receta->valoracion }} </td>
                 <td> {{ link_to('receta/'.$receta->id, 'Ver') }} </td>
