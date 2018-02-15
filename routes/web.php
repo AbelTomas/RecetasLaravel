@@ -32,3 +32,4 @@ Route::get('storage/{archivo}', function ($archivo) { //Para ver la imagen añad
     abort(404);
 
 });
+
