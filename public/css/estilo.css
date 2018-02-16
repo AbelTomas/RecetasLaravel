@@ -4,11 +4,13 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
-
+section{
+    width: 100%;
+}
 #tablaInicio{
     position: relative;
-    left:480px;
+    margin:auto;
+    width: 700px;
     border-collapse: collapse; border-spacing: 0;
     border: solid 4px black;
 }
@@ -44,35 +46,30 @@ ul li {
     position: relative;
     color: black;
     text-decoration: none;
-    left: 589px;
+    width: 230px;
+    margin: auto;
     font-size: 24px;
 }
 
 a{
     text-decoration: none;
     color: black;
-    margin:12px;
+    margin:auto;
 }
 
 a:hover{
     color: white;
 }
 
-#show{
+#show, h2, #save{
     position: relative;
-    left: 603px;
+    margin: auto;
+    width: 500px;
+
 }
 
-h2{
-    position: relative;
-    left: 621px;
-}
+
 #atras{
     position: relative;
     font-size:20px;
-}
-
-#save{
-    position: relative;
-    left:482px;
 }

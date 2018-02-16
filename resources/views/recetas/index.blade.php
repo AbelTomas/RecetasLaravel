@@ -1,12 +1,12 @@
 @extends('layout')
 
 @section('contenido')
-
+<section>
 @if(Session::has('notice'))
     <p> <strong> {{ Session::get('notice') }} </strong> </p>
 @endif
-<p>
-    <a href="{{url('receta/create')}}" id="crear">Crear nueva receta</a>
+<p id="crear">
+<a href="{{url('receta/create')}}" >Crear nueva receta</a>
 </p>
 
 @if($recetas->count())
@@ -39,4 +39,5 @@
 @else
     <p> No se han encontrado recetas </p>
 @endif
+</section>
 @endsection
